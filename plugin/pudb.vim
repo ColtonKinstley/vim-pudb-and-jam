@@ -49,8 +49,7 @@ catch
 endtry
 
 if get(s:, 'import_failed', v:false)
-    call s:EchoError('vim-pudb-and-jam requires pudb to be installed')
-    finish
+    call s:EchoError('pudb may not be installed')
 endif
 
 ""
